@@ -1,0 +1,24 @@
+html, body{
+  margin:0;
+  padding:0;
+  height:100%;
+}
+main{
+	display: block;
+	margin: 0 auto;
+	width: 600px;
+}
+article{
+	display: inline-block;
+	margin: 1em 2em;
+}
+td {
+	border: 1px solid black;
+}
+#art-first table {
+	display: flex;
+	justify-content: flex-start;
+}
+#art-first table {
+	display: flex;
+}
