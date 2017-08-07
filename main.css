@@ -6,19 +6,64 @@ html, body{
 main{
 	display: block;
 	margin: 0 auto;
-	width: 600px;
+	width: 900px;
 }
 article{
 	display: inline-block;
+	vertical-align: top;
 	margin: 1em 2em;
 }
 td {
 	border: 1px solid black;
 }
-#art-first table {
+
+/*#art-first thead,
+#art-first tbody*/
+#art-first thead {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: baseline;
+	flex-direction: column;
 }
-#art-first table {
-	display: flex;
+#art-first thead {
+	background: white;
+	margin: auto 0;
 }
+
+#art-first tr {
+	overflow: hidden;
+}
+
+/*****************************************/
+
+#art-second table thead,
+#art-second table tbody {
+	display: block;
+}
+
+#art-second table tbody {
+	overflow: auto;
+	height: 500px;
+}
+
+#art-second table td {
+	width: 100px;
+}
+
+/*****************************************/
+
+iframe {
+	border: none;
+	height: 500px;
+	top: 10px;
+}
+
+#art-third thead{
+	position: fixed;
+	top: 12px;
+	background: green;
+}
+#art-third table{
+	position: relative;
+	top: 20px;
+}
+
